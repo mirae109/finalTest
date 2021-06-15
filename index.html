@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="now" value="now">
+        <h1>지금은</h1>
+    </div>
+    
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function clock(){
+            var currentDate = new Date();
+            var now = document.getElementById("now");
+         
+            var msg = "지금은"+currentDate.getHours()+"시"
+            msg += currentDate.getMinutes()+"분";
+            msg += currentDate.getSeconds()+"초";
+            msg += "입니다."
+
+            now.innerText = msg;
+           
+            alert(clock);
+        };
+    </script>
+</body>
+</html>
